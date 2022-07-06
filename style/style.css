@@ -6,12 +6,18 @@
   --color-grey1: rgb(83, 82, 82);
   --color-white: rgb(254, 254, 254);
   --color-grey2: rgb(125, 125, 125);
+  --color-cyan: rgb(22, 237, 245);
+  --color-blackwhi: rgb(59, 57, 57);
+  --color-green: rgb(27, 190, 76);
+  --color-fonder: rgba(255, 255, 255, 0.2);
+  --color-fond-02: rgba(0, 0, 0, 0.2);
+  --color-fond-03: rgba(0, 0, 0, 0.3);
+  --color-fond-07: rgba(0, 0, 0, 0.7);
+  --color-barra-experience: rgb(207, 96, 201);
+  --color-pointer-experience: rgb(218, 54, 209);
   --gradiant: linear-gradient(90deg, rgb(5, 217, 51), rgb(24, 227, 237));
   --gradianttwo: linear-gradient(90deg, rgb(40, 135, 169), rgb(251, 5, 251));
   --gradiantthree: linear-gradient(90deg, rgb(223, 87, 87), rgb(241, 158, 63));
-
-  /* experience */
-  --color-fonder: rgba(255, 255, 255, 0.2);
 
   /*-- font --*/
 
@@ -57,7 +63,7 @@ body {
 
 .linetitle:hover {
   transition: 2s;
-  background-color: black;
+  background-color: var(--color-black);
 }
 
 .linetitle:after {
@@ -68,7 +74,7 @@ body {
   height: 4px;
   bottom: 0;
   left: 0;
-  background-color: rgb(22, 237, 245);
+  background-color: var(--color-cyan);
   transform-origin: center;
   transform: scaleX(0);
   transition: transform 0.3s ease-out;
@@ -113,7 +119,7 @@ h1 {
 }
 
 .spann::before {
-  background: linear-gradient(90deg, rgb(5, 217, 51), rgb(24, 227, 237));
+  background: var(--gradiant);
   content: var(--content);
   position: absolute;
   inset: 0;
@@ -196,7 +202,7 @@ h2 {
   display: flex;
   text-align: start;
   justify-content: flex-start;
-  background: rgb(59, 57, 57);
+  background: var(--color-blackwhi);
   border-radius: 20px;
 }
 
@@ -209,7 +215,7 @@ h2 {
 .image-about {
   grid-column: 2;
   padding: 10px;
-  border: 4px solid rgb(27, 190, 76);
+  border: 4px solid var(--color-green);
   border-radius: 5px;
   width: 50vh;
   height: 40vh;
@@ -224,7 +230,7 @@ h2 {
   padding: 25px;
   display: grid;
   grid-template-columns: 1fr 3px 1fr;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .timeline__component {
@@ -234,18 +240,18 @@ h2 {
 .timeline__component--bg {
   padding: 1.5em;
   background: var(--color-fonder);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px var(--color-fond-02);
   border-radius: 10px;
 }
 
-/* LEAVE TILL LAST */
+/* Leave till last */
 .timeline__component--bottom {
   margin-bottom: 0;
 }
 
 .timeline__middle {
   position: relative;
-  background: #e167c7;
+  background: var(--color-barra-experience);
 }
 
 .timeline__point {
@@ -255,11 +261,10 @@ h2 {
   transform: translateX(-50%);
   width: 15px;
   height: 15px;
-  background: #e8299f;
+  background: var(--color-pointer-experience);
   border-radius: 50%;
 }
 
-/*-- LEAVE TILL LAST --*/
 .timeline__point--bottom {
   top: initial;
   bottom: 0;
@@ -289,7 +294,7 @@ h2 {
 
 .container-img {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   justify-items: center;
 }
 
@@ -311,7 +316,7 @@ h2 {
   cursor: pointer;
   overflow: hidden;
   border-radius: 6px;
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 15px 25px var(--color-fond-03);
 }
 
 .image-briefcase {
@@ -335,7 +340,7 @@ h2 {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--color-fond-07);
   transition: all 1s;
   opacity: 0;
   visibility: hidden;
@@ -377,7 +382,7 @@ h2 {
 .form-control {
   color: var(--color-white);
   margin: 5px;
-  background: rgb(0, 0, 0, 0.7);
+  background: var(--color-fond-07);
   border-radius: 5px;
   border: none;
   width: 300px;
@@ -417,7 +422,7 @@ h2 {
   .timeline {
     display: grid;
     grid-template-columns: 3px 1fr;
-    color: #ffffff;
+    color: var(--color-white);
   }
   .timeline__middle {
     display: none;
@@ -434,6 +439,7 @@ h2 {
     position: fixed;
     background: var(--gradianttwo);
     width: 100%;
+    z-index: 10000;
   }
   .bars__menu {
     padding: 20px;
