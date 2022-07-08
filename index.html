@@ -24,23 +24,22 @@
     <div id="particles-js"></div>
     <script src="particles.js"></script>
     <header class="header-menu" id="inicie">
-      <div class="navigation">
-        <nav class="barra-navigation">
+      <div class="navigation" id="navigatio-bar">
+        <nav id="navBar" class="barra-navigation">
           <a class="bar linetitle" href="#inicie">Home</a>
           <a class="bar linetitle" href="#about-me">About me</a>
           <a class="bar linetitle" href="#experience-me">Experience</a>
-          <a class="bar linetitle" href="#skill-me">Skill</a>
           <a class="bar linetitle" href="#briefcase-me">Briefcase</a>
-          <a class="bar linetitle" href="#contact-me">Contact</a>
+          <a class="bar linetitle" href="#concat">Concat</a>
         </nav>
       </div>
       <div class="container-bars_menu">
-      <div class="bars__menu">
-        <span class="line1__bars-menu"></span>
-        <span class="line2__bars-menu"></span>
-        <span class="line3__bars-menu"></span>
-    </div>
-  </div>
+        <div class="bars__menu">
+          <span class="line1__bars-menu"></span>
+          <span class="line2__bars-menu"></span>
+          <span class="line3__bars-menu"></span>
+        </div>
+      </div>
       <div class="container-imgg">
         <img src="./style/assets/1995515.png" alt="img-mee" />
       </div>
@@ -58,17 +57,11 @@
       </div>
     </header>
     <main class="wrapper">
-      <section id="about-me">
-        <h3 class="title-section title-about">About me</h3>
-        <div class="container-img-about">
-        <img
-          class="image-about"
-          src="./style/assets/computer-programming.jpg"
-          alt="imgret"
-        />
-      </div>
-        <article class="description-me">
-          <p>
+      <section id="about-me" class="secction">
+        <div class="container-about">
+          <h3 class="title-about title-section">About me</h3>
+          <div class="container-about"></div>
+          <p class="description-me">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias unde
             maiores animi voluptates, aut, dolorem magni nihil, perferendis modi
             vitae minima similique facilis adipisci nemo rem est sint odit quae.
@@ -80,177 +73,111 @@
             eligendi, possimus, illum omnis sunt nisi similique ratione
             obcaecati voluptates in iure nesciunt?
           </p>
-        </article>
+        </div>
       </section>
-      <section id="experience-me">
-        <h3 class="title-section">Experience</h3>
-        <div class="timeline">
-          <div class="timeline__component">
-            <div class="timeline__date timeline__date--right">
-              August 30, 2017
+
+      <section id="experience-me" class="secction">
+        <div class="conainer__complet">
+          <h3 class="title-section">Experience</h3>
+          <div class="conten-experience">
+            <h6 class="title-ecperience">Academlo</h6>
+            <div class="container-p-img">
+              <img src="./style/assets/academlo.png" alt="img-academlo" />
+              <p class="parraf-experience">
+                May 27, 2022 <span>10 meses</span>
+              </p>
             </div>
           </div>
-          <div class="timeline__middle">
-            <div class="timeline__point"></div>
-          </div>
-          <div class="timeline__component timeline__component--bg">
-            <h2 class="timeline__title">Google</h2>
-            <p class="timeline__paragraph">Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="timeline__component timeline__component--bg">
-            <h2 class="timeline__title">Amazon</h2>
-            <p class="timeline__paragraph">Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="timeline__middle">
-            <div class="timeline__point"></div>
-          </div>
-          <div class="timeline__component">
-            <div class="timeline__date">February 25, 2019</div>
-          </div>
-          <div class="timeline__component">
-            <div class="timeline__date timeline__date--right">June 3, 2020</div>
-          </div>
-          <div class="timeline__middle">
-            <div class="timeline__point"></div>
-          </div>
-          <div class="timeline__component timeline__component--bg">
-            <h2 class="timeline__title">Airbn</h2>
-            <p class="timeline__paragraph">Lorem ipsum dolor sit amet.</p>
+          <div class="conten-experience">
+            <h6 class="title-ecperience">Skill</h6>
+            <div class="container-img">
+              <img
+                class="image-skill"
+                src="./style/lenguajes/css-3.png"
+                alt="img-ss"
+              />
+              <img
+                class="image-skill"
+                src="./style/lenguajes/html-5.png"
+                alt="img-html"
+              />
+              <img
+                class="image-skill"
+                src="./style/lenguajes/js.png"
+                alt="img-js"
+              />
+              <img
+                class="image-skill"
+                src="./style/lenguajes/github.png"
+                alt="img-git"
+              />
+            </div>
           </div>
         </div>
       </section>
-      <section id="skill-me">
-        <h3 class="title-section">Skill</h3>
-        <div class="container-img">
-          <img
-            class="image-skill"
-            src="./style/lenguajes/c-.png"
-            alt="img-c++"
-          />
-          <img
-            class="image-skill"
-            src="./style/lenguajes/css-3.png"
-            alt="img-ss"
-          />
-          <img
-            class="image-skill"
-            src="./style/lenguajes/html-5.png"
-            alt="img-html"
-          />
-          <img
-            class="image-skill"
-            src="./style/lenguajes/js.png"
-            alt="img-js"
-          />
-          <img
-            class="image-skill"
-            src="./style/lenguajes/nodejs.png"
-            alt="img-node"
-          />
-          <img
-            class="image-skill"
-            src="./style/lenguajes/react.png"
-            alt="img-react"
-          />
-          <img
-            class="image-skill"
-            src="./style/lenguajes/typescript.png"
-            alt="img-typ"
-          />
-          <img
-            class="image-skill"
-            src="./style/lenguajes/piton.png"
-            alt="img-pyth"
-          />
-        </div>
-      </section>
-      <section id="briefcase-me">
+
+      <section id="briefcase-me" class="secction">
         <h3 class="title-section">Briefcase</h3>
         <div class="container-briefcase">
           <div class="briefcase--contet">
-            <a href="https://www.amazon.es/" class="link-git" target="_blank">
-              <img
-                class="image-briefcase"
-                src="./style/assets/amazon.png"
-                alt="img-amazon"
-              />
-            </a>
+            <img
+              class="image-briefcase"
+              src="./style/assets/amazon.png"
+              alt="img-amazon"
+            />
             <div class="conteiner-element">
-              <h6 class="title-briecase">Amazon</h6>
+              <h6 class="title-briecase">E-comerce</h6>
               <p class="paragraph-descript">Lorem ipsum dolor sit.</p>
-            </div>
-          </div>
-          <div class="briefcase--contet">
-            <a
-              href="https://www.binance.com/es"
-              class="link-git"
-              target="_blank"
-            >
-              <img
-                class="image-briefcase"
-                src="./style/assets/binance.png"
-                alt="img-binance"
-              />
-            </a>
-            <div class="conteiner-element">
-              <h6 class="title-briecase">Binance</h6>
-              <p class="paragraph-descript">Lorem ipsum dolor sit.</p>
-            </div>
-          </div>
-          <div class="briefcase--contet">
-            <a
-              href="https://www.netflix.com/browse"
-              class="link-git"
-              target="_blank"
-            >
-              <img
-                class="image-briefcase"
-                src="./style/assets/netflix.png"
-                alt="img-netflix"
-              />
-            </a>
-            <div class="conteiner-element">
-              <h6 class="title-briecase">Netflix</h6>
-              <p class="paragraph-descript">Lorem ipsum dolor sit.</p>
+              <a href="https://www.amazon.es/" class="link-git" target="_blank"
+                >Ver</a
+              >
             </div>
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <section id="contact-me">
-          <h3 class="title-section title-contact">Contact</h3>
-          <div class="contaainer-concat">
-          <div class="mb-3">
-            <form action="https://formsubmit.co/leaylio3327@gmail.com" method="POST">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Email address</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="name@example.com"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"
-              >Text</label
-            >
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              placeholder="mesengger"
-            ></textarea>
-            <input type="submit" value="Enviar" class="botton-submit"/>
-            <input type="hidden" name="_next" value="https://shiny-squirrel-1218c7.netlify.app">
-          </form>
+
+      <section id="concat" class="seccion">
+        <div class="seccion__contenedor">
+          <h2 class="seccion__titulo">Concat</h2>
+          <div class="seccion__contenido">
+            <form id="form" class="form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  placeholder="Text"
+                  rows="10"
+                ></textarea>
+              </div>
+              <input type="submit" class="btn-form" value="Enviar" />
+            </form>
           </div>
         </div>
-        </section>
-      </footer>
+      </section>
+
+      <script src="./js/barrademenu.js"></script>
+      <script src="./js/particles.min.js"></script>
+      <script src="./js/result.js"></script>
+      <script src="./js/formulario.js"></script>
     </main>
-    <script src="./js/barrademenu.js"></script>
-    <script src="./js/particles.min.js"></script>
-    <script src="./js/result.js"></script>
   </body>
 </html>
