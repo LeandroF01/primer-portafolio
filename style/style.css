@@ -238,6 +238,7 @@ h2 {
 }
 
 .container-p-img {
+  justify-content: center;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -258,10 +259,13 @@ h2 {
 
 .image-skill {
   width: 80px;
+  display: grid;
 }
 
 .container-img img {
-  margin: 10px;
+  margin: auto;
+  padding: 10px;
+  justify-content: center;
 }
 
 .conten-experience {
